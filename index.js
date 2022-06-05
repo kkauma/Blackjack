@@ -13,6 +13,9 @@ let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 let playerEl = document.getElementById("player-el");
 
+// Destructuring player object
+const { name, chips } = player;
+
 playerEl.textContent = player.name + ": $" + player.chips;
 
 function getRandomCard() {
