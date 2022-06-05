@@ -15,8 +15,7 @@ let playerEl = document.getElementById("player-el");
 
 // Destructuring player object
 const { name, chips } = player;
-
-playerEl.textContent = player.name + ": $" + player.chips;
+playerEl.textContent = `${name}: $${chips}`;
 
 function getRandomCard() {
   let randomNumber = Math.floor(Math.random() * 13) + 1;
